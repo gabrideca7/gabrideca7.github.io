@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zaptopia — Roguelike card battler · Gabriele Decandia</title>
+  <meta name="description" content="Case study: Zaptopia, a roguelike card battler for iOS and Android built with TypeScript, Phaser and Three.js. From first prototype to closed beta on both stores in under two weeks.">
+  <link rel="canonical" href="https://gabrideca7.github.io/work/zaptopia.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Zaptopia — Roguelike card battler">
+  <meta property="og:description" content="Goofy creatures, a 3D table and combos that multiply. A case study by Gabriele Decandia.">
+  <meta property="og:url" content="https://gabrideca7.github.io/work/zaptopia.html">
+  <meta property="og:image" content="https://gabrideca7.github.io/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f2efe7">
+  <link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.className = d.className.replace('no-js', 'js');
+      try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') d.dataset.theme = t; } catch (e) {}
+    })();
+  </script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../" aria-label="Gabriele Decandia — home">Gabriele Decandia<span class="brand-dot">.</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../#work" aria-current="page">Work</a>
+        <a href="../#about">About</a>
+        <a href="../#contact">Contact</a>
+      </nav>
+      <div class="header-meta">
+        <span class="clock mono" data-clock>Altamura, IT <time>--:--</time></span>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.2"/><path class="half" d="M8 1.6a6.4 6.4 0 0 1 0 12.8z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap cs-hero">
+      <a class="cs-back" href="../#work"><span class="arrow" aria-hidden="true">←</span> All work</a>
+      <div class="cs-kicker"><span class="label">Case study 02</span><span class="tag tag--status">Closed beta</span></div>
+      <h1 class="cs-title">Zaptopia</h1>
+      <p class="lede cs-sub">A roguelike card battler for phones — goofy creatures, a 3D table and <em>combos that multiply.</em></p>
+
+      <dl class="grid cs-meta">
+        <div><dt class="label">Role</dt><dd>Solo — game design, development, art direction, release</dd></div>
+        <div><dt class="label">Timeline</dt><dd>September 2026 — ongoing<br>Version 1.35</dd></div>
+        <div><dt class="label">Stack</dt><dd>TypeScript · Phaser 3 · Three.js · Vite · Capacitor · Supabase</dd></div>
+        <div><dt class="label">Status</dt><dd>Closed testing on Google Play and TestFlight. <a href="../#contact">Ask me for an invite</a></dd></div>
+      </dl>
+    </section>
+
+    <section class="wrap cs-cover reveal" aria-label="Screens">
+      <div class="media media--zaptopia">
+        <img class="env" src="../assets/img/zaptopia/env-1400.webp" width="1024" height="572" alt="" decoding="async">
+        <img class="zap-logo" src="../assets/img/zaptopia/logo-480.webp" srcset="../assets/img/zaptopia/logo-480.webp 480w, ../assets/img/zaptopia/logo-900.webp 900w" sizes="(max-width: 700px) 50vw, 26vw" width="480" height="342" alt="Zaptopia logo" decoding="async">
+        <span class="zap-sub">Roguelike deck-builder · iOS &amp; Android</span>
+        <div class="phone phone--plain"><div class="phone-screen"><img src="../assets/img/zaptopia/menu-420.webp" srcset="../assets/img/zaptopia/menu-420.webp 420w, ../assets/img/zaptopia/menu-760.webp 760w" sizes="(max-width: 700px) 40vw, 18vw" width="420" height="747" alt="Main menu with creatures standing on the 3D table" decoding="async"></div></div>
+        <div class="phone phone--plain"><div class="phone-screen"><img src="../assets/img/zaptopia/battle-420.webp" srcset="../assets/img/zaptopia/battle-420.webp 420w, ../assets/img/zaptopia/battle-760.webp 760w" sizes="(max-width: 700px) 46vw, 22vw" width="420" height="747" alt="A battle against the Grumpy Gnome on a four-lane table" decoding="async"></div></div>
+        <div class="phone phone--plain"><div class="phone-screen"><img src="../assets/img/zaptopia/shop-420.webp" srcset="../assets/img/zaptopia/shop-420.webp 420w, ../assets/img/zaptopia/shop-760.webp 760w" sizes="(max-width: 700px) 40vw, 18vw" width="420" height="747" alt="The shop between fights: cards, Jokers and services" decoding="async"></div></div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <!-- 01 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s1">
+        <div class="cs-label"><h2 class="label" id="s1">01 — The pitch</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">Lane battles from the board-game tradition, with the <em>“just one more run”</em> pull of modern roguelikes.</p>
+          <div class="prose reveal">
+            <p>Four lanes, four terrains: Swamp, Volcano, Clouds and Crypt. A creature can only be played on the lane of its own terrain, so every hand is a small placement puzzle. Attack, and each creature hits the lane in front of it. Hits add to <strong>Damage</strong>; doubles, triples and all-out attacks add to <strong>Combo</strong>. The boss takes the product.</p>
+            <p>Between fights you walk a branching path — shop, campfire, mystery event, treasure — and pick up Jokers that bend the rules, Balatro-style. Runs are short, playable with one hand, and work offline.</p>
+          </div>
+        </div>
+        <div class="cs-full mt-l reveal">
+          <div class="formula" role="img" aria-label="Damage times Combo equals the hit the boss takes">
+            <span class="chip chip--dmg"><small>DAMAGE</small>12</span>
+            <span class="op">×</span>
+            <span class="chip chip--combo"><small>COMBO</small>4</span>
+            <span class="op">=</span>
+            <span class="chip chip--total"><small>BOSS TAKES</small>48</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s2">
+        <div class="cs-label"><h2 class="label" id="s2">02 — What’s in it</h2></div>
+        <div class="cs-body">
+          <div class="kpis reveal">
+            <div class="kpi"><div class="kpi-value">95</div><div class="kpi-label">illustrated cards — 60 creatures, 35 spells</div></div>
+            <div class="kpi"><div class="kpi-value">46</div><div class="kpi-label">Jokers, four rarities, special editions</div></div>
+            <div class="kpi"><div class="kpi-value">4</div><div class="kpi-label">worlds, each with a boss and its own rule</div></div>
+            <div class="kpi"><div class="kpi-value">1</div><div class="kpi-label">daily challenge, the same deck for everyone</div></div>
+          </div>
+          <div class="prose reveal">
+            <p>Around the core loop: starter decks and a deck editor, card upgrades and evolutions, an album to complete, daily missions, player levels, a login streak and cosmetics — painted card backs, animated environments, shiny creatures.</p>
+          </div>
+        </div>
+        <div class="cs-full mt-l reveal" aria-label="A selection of Zaptopia’s card illustrations">
+          <div class="marquee" style="--dur: 110s"><div class="marquee-track"><img src="../assets/img/zaptopia/cards/aquila.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/balena.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/bardo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/bombarolo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/cavaliere.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/colibri.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/cyborg.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/drago.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/driade.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/fantasmino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/fenice.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/fungotto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/gattonero.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/gigante.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/golemlava.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/grifone.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/gufo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/lich.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/lumachino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/medusa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/mummia.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/pegaso.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/porcino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/ranocchio.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/aquila.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/balena.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/bardo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/bombarolo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/cavaliere.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/colibri.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/cyborg.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/drago.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/driade.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/fantasmino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/fenice.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/fungotto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/gattonero.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/gigante.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/golemlava.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/grifone.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/gufo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/lich.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/lumachino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/medusa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/mummia.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/pegaso.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/porcino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/ranocchio.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"></div></div>
+          <div class="marquee marquee--reverse" style="--dur: 120s"><div class="marquee-track"><img src="../assets/img/zaptopia/cards/regina.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/salamandrino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/scheletrino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/skambiaz.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/tartaruga.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/vampiretto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/vulcanotto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/zombino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/zucca.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/pipistrello.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/ragno.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/mongolfiera.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/bigbang.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/calamita.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/cometa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/fulmine.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/tornado.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/terremoto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/vortice.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/pozione.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/jackpot.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/festa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/banchetto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/syd.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/regina.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/salamandrino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/scheletrino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/skambiaz.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/tartaruga.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/vampiretto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/vulcanotto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/zombino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/zucca.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/pipistrello.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/ragno.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/mongolfiera.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/bigbang.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/calamita.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/cometa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/fulmine.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/tornado.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/terremoto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/vortice.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/pozione.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/jackpot.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/festa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/banchetto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../assets/img/zaptopia/cards/syd.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"></div></div>
+        </div>
+      </section>
+
+      <!-- 03 -->
+      <section class="cs-section grid cs-row" id="engineering" aria-labelledby="s3">
+        <div class="cs-label"><h2 class="label" id="s3">03 — Engineering</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">One TypeScript codebase, two renderers, <em>both app stores.</em></p>
+        </div>
+        <div class="cs-full mt-m decisions">
+          <article class="decision reveal">
+            <span class="label">A · Rendering</span>
+            <h3>Two renderers, one screen.</h3>
+            <p>Three.js draws the table, the 3D creatures and the boss environments; a transparent Phaser canvas on top handles cards, UI and input. The camera sits low across the table, like sitting opposite the boss.</p>
+            <div class="split">
+              <div><span class="label">Why</span><span>Phaser is great at 2D UI and game flow, Three.js at real 3D. Layering them kept each one doing what it’s good at.</span></div>
+              <div><span class="label">Care</span><span>A battery saver turns itself on for low-end phones on first launch.</span></div>
+            </div>
+          </article>
+          <article class="decision reveal" style="--delay: .08s">
+            <span class="label">B · Balance</span>
+            <h3>Let a bot play it first.</h3>
+            <p>A headless bot plays complete runs through the real game code, so balance changes are measured, not guessed. Before one tuning pass it won 0 of 10 runs and cleared 6.7 fights on average; after it, 1 win and 8.4 fights.</p>
+            <div class="split">
+              <div><span class="label">Rule</span><span>Card costs follow a budget: one energy is worth about 4–5 stat points plus a small effect. Outliers get fixed.</span></div>
+            </div>
+          </article>
+          <article class="decision reveal">
+            <span class="label">C · Online</span>
+            <h3>No accounts, no e-mail.</h3>
+            <p>World leaderboards and cloud saves run on Supabase without asking players to sign up. Each phone gets a random id and a 16-character secret; the code restores progress on a new device.</p>
+            <div class="split">
+              <div><span class="label">Security</span><span>Tables aren’t readable from the app, wrong codes are rejected, anonymous stats can be switched off. Offline, the game simply keeps working.</span></div>
+            </div>
+          </article>
+          <article class="decision reveal" style="--delay: .08s">
+            <span class="label">D · Fairness</span>
+            <h3>Pay for looks, never for power.</h3>
+            <p>The whole game is free. Real money only buys cosmetics; card packs are paid for with stars earned by playing — no paid loot boxes. Rewarded videos are optional.</p>
+            <div class="split">
+              <div><span class="label">Detail</span><span>No emoji in the interface: a custom colour icon font keeps every symbol identical on every phone.</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 04 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s4">
+        <div class="cs-label"><h2 class="label" id="s4">04 — Screens</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">Portrait-only, thumb-friendly, readable at a glance.</p>
+        </div>
+        <figure class="cs-full mt-m reveal">
+          <div class="phones-row" style="--n: 4; --bg: #12164a">
+            <figure>
+              <div class="phone phone--flow phone--plain"><div class="phone-screen"><img src="../assets/img/zaptopia/battle-420.webp" srcset="../assets/img/zaptopia/battle-420.webp 420w, ../assets/img/zaptopia/battle-760.webp 760w" sizes="(max-width: 700px) 60vw, 18vw" width="420" height="747" alt="Battle: lanes, damage and combo counters, the hand of cards" loading="lazy" decoding="async"></div></div>
+              <figcaption class="label" style="color:#aab0e8">Battle</figcaption>
+            </figure>
+            <figure>
+              <div class="phone phone--flow phone--plain"><div class="phone-screen"><img src="../assets/img/zaptopia/map-420.webp" srcset="../assets/img/zaptopia/map-420.webp 420w, ../assets/img/zaptopia/map-760.webp 760w" sizes="(max-width: 700px) 60vw, 18vw" width="420" height="747" alt="World map with the next battle and a choice of path" loading="lazy" decoding="async"></div></div>
+              <figcaption class="label" style="color:#aab0e8">Choose your path</figcaption>
+            </figure>
+            <figure>
+              <div class="phone phone--flow phone--plain"><div class="phone-screen"><img src="../assets/img/zaptopia/album-420.webp" srcset="../assets/img/zaptopia/album-420.webp 420w, ../assets/img/zaptopia/album-760.webp 760w" sizes="(max-width: 700px) 60vw, 18vw" width="420" height="747" alt="Album with all 95 cards" loading="lazy" decoding="async"></div></div>
+              <figcaption class="label" style="color:#aab0e8">Album</figcaption>
+            </figure>
+            <figure>
+              <div class="phone phone--flow phone--plain"><div class="phone-screen"><img src="../assets/img/zaptopia/shop-420.webp" srcset="../assets/img/zaptopia/shop-420.webp 420w, ../assets/img/zaptopia/shop-760.webp 760w" sizes="(max-width: 700px) 60vw, 18vw" width="420" height="747" alt="Shop selling cards, a card pack, Jokers and services" loading="lazy" decoding="async"></div></div>
+              <figcaption class="label" style="color:#aab0e8">Shop</figcaption>
+            </figure>
+          </div>
+        </figure>
+      </section>
+
+      <!-- 05 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s5">
+        <div class="cs-label"><h2 class="label" id="s5">05 — Shipping</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal"><em>36 release builds</em> in the first three weeks.</p>
+          <div class="prose reveal">
+            <p>Every build is signed, smoke-tested on an emulator for crashes and uploaded to Google Play’s closed track and TestFlight. Testers get an in-app prompt when a new version is out, and a small news feed lets me talk to them without shipping an update.</p>
+            <p>The pipeline around the game is code too: Python scripts generate the icon font, logo variants and card backs, and a headless-Chrome script captures the store screenshots straight from the running game.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <a class="next wrap" href="nicoletti.html">
+      <span class="label">Next case study</span>
+      <span class="next-title">Nicoletti Raffaele <span class="arrow" aria-hidden="true">→</span></span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span data-year>2026</span> Gabriele Decandia</span>
+      <span>Built by hand with HTML, CSS and a little JavaScript. No cookies, no trackers.</span>
+      <a href="../#contact">Get in touch →</a>
+    </div>
+  </footer>
+</body>
+</html>

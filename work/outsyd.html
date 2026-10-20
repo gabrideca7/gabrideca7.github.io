@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Outsyd — AI travel planner · Gabriele Decandia</title>
+  <meta name="description" content="Case study: Outsyd, an AI travel planner built with Flutter and Firebase, live on the App Store and Google Play. Itineraries on the map in seconds, flight deals, price alerts and real-money cashback.">
+  <link rel="canonical" href="https://gabrideca7.github.io/work/outsyd.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Outsyd — AI travel planner">
+  <meta property="og:description" content="Type a city, get the day planned on the map in seconds. A case study by Gabriele Decandia.">
+  <meta property="og:url" content="https://gabrideca7.github.io/work/outsyd.html">
+  <meta property="og:image" content="https://gabrideca7.github.io/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f2efe7">
+  <link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.className = d.className.replace('no-js', 'js');
+      try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') d.dataset.theme = t; } catch (e) {}
+    })();
+  </script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../" aria-label="Gabriele Decandia — home">Gabriele Decandia<span class="brand-dot">.</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../#work" aria-current="page">Work</a>
+        <a href="../#about">About</a>
+        <a href="../#contact">Contact</a>
+      </nav>
+      <div class="header-meta">
+        <span class="clock mono" data-clock>Altamura, IT <time>--:--</time></span>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.2"/><path class="half" d="M8 1.6a6.4 6.4 0 0 1 0 12.8z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap cs-hero">
+      <a class="cs-back" href="../#work"><span class="arrow" aria-hidden="true">←</span> All work</a>
+      <div class="cs-kicker"><span class="label">Case study 01</span><span class="tag tag--live">Live on iOS &amp; Android</span></div>
+      <h1 class="cs-title">Outsyd</h1>
+      <p class="lede cs-sub">Type a city. Get the day planned — <em>on the map, in seconds.</em></p>
+
+      <dl class="grid cs-meta">
+        <div><dt class="label">Role</dt><dd>Founder — product, design, development, release and marketing</dd></div>
+        <div><dt class="label">Timeline</dt><dd>2025 — ongoing<br>Version 3.5, 61 builds</dd></div>
+        <div><dt class="label">Stack</dt><dd>Flutter · Dart · Firebase · Cloud Functions (Node.js) · Gemini · Geoapify · Stadia Maps</dd></div>
+        <div><dt class="label">Links</dt><dd><a href="https://apps.apple.com/app/id6756832439" target="_blank" rel="noopener">App Store</a> · <a href="https://play.google.com/store/apps/details?id=dev.outsyd.app" target="_blank" rel="noopener">Google Play</a> · <a href="https://outsyd-6135d.web.app" target="_blank" rel="noopener">Website</a></dd></div>
+      </dl>
+    </section>
+
+    <section class="wrap cs-cover reveal" aria-label="Screens">
+      <div class="media media--outsyd">
+        <img class="syd" src="../assets/img/outsyd/syd-360.webp" width="360" height="324" alt="Syd, Outsyd’s bird mascot" decoding="async">
+        <div class="phone"><div class="phone-screen"><img src="../assets/img/outsyd/napoli-420.webp" srcset="../assets/img/outsyd/napoli-420.webp 420w, ../assets/img/outsyd/napoli-760.webp 760w" sizes="(max-width: 700px) 42vw, 22vw" width="420" height="913" alt="A day itinerary in Naples drawn on the map" decoding="async"></div></div>
+        <div class="phone"><div class="phone-screen"><img src="../assets/img/outsyd/home-420.webp" srcset="../assets/img/outsyd/home-420.webp 420w, ../assets/img/outsyd/home-760.webp 760w" sizes="(max-width: 700px) 52vw, 26vw" width="420" height="913" alt="Outsyd home screen asking where you are going today" decoding="async"></div></div>
+        <div class="phone"><div class="phone-screen"><img src="../assets/img/outsyd/roma-420.webp" srcset="../assets/img/outsyd/roma-420.webp 420w, ../assets/img/outsyd/roma-760.webp 760w" sizes="(max-width: 700px) 42vw, 22vw" width="420" height="913" alt="A walking route through Rome with numbered stops" decoding="async"></div></div>
+        <span class="media-caption media-caption--top media-caption--r">Screens in Italian · the app is fully bilingual</span>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <!-- 01 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s1">
+        <div class="cs-label"><h2 class="label" id="s1">01 — The problem</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">The ship docks for eight hours in a city you never researched. <em>Now what?</em></p>
+          <div class="prose reveal">
+            <p>Planning a good day somewhere new means hours of forums, blog posts and map tabs: what is worth seeing, in which order, how far apart, when to stop for lunch. Cruise passengers feel it most — every port is a new city with a hard deadline to get back on board.</p>
+            <p>Outsyd does that work in seconds. Name a city, say how long you have and how you’re moving, and the app builds a route on the map: real places, ordered geographically, timed from when you start to when you need to be back, with meals and evening plans in the right gaps.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s2">
+        <div class="cs-label"><h2 class="label" id="s2">02 — What it does</h2></div>
+        <div class="cs-body">
+          <ul class="feature-list reveal">
+            <li><strong>Itineraries on a real map</strong>Stops ordered by geography and time of day — markets in the morning, viewpoints at sunset — each with an arrival time.</li>
+            <li><strong>Breakfast, lunch, dinner, evening</strong>Meal and nightlife suggestions dropped into the gaps of every day, not just the first.</li>
+            <li><strong>Flight deals from 30 Italian airports</strong>Real fares, sorted by price, with route watchlists and push alerts when a price drops.</li>
+            <li><strong>Practical layer</strong>Airport-to-centre options, where to stay by neighbourhood, city tips, attraction tickets — each one verified before it’s cached.</li>
+            <li><strong>Social and collaborative</strong>Publish itineraries, like and comment, or plan a trip together through invite links.</li>
+            <li><strong>Cashback in real money</strong>Funded by affiliate commissions: users get a share of what Outsyd actually earns — never more.</li>
+          </ul>
+        </div>
+        <figure class="cs-full mt-l reveal">
+          <div class="phones-row" style="--bg: #0a2a4a">
+            <figure>
+              <div class="phone phone--flow"><div class="phone-screen"><img src="../assets/img/outsyd/home-420.webp" srcset="../assets/img/outsyd/home-420.webp 420w, ../assets/img/outsyd/home-760.webp 760w" sizes="(max-width: 700px) 60vw, 24vw" width="420" height="913" alt="Home: pick a city, duration, distance and visiting hours" loading="lazy" decoding="async"></div></div>
+              <figcaption class="label" style="color:#9fbad3">Start with a city</figcaption>
+            </figure>
+            <figure>
+              <div class="phone phone--flow"><div class="phone-screen"><img src="../assets/img/outsyd/napoli-420.webp" srcset="../assets/img/outsyd/napoli-420.webp 420w, ../assets/img/outsyd/napoli-760.webp 760w" sizes="(max-width: 700px) 60vw, 24vw" width="420" height="913" alt="Naples itinerary with seven stops along the old town" loading="lazy" decoding="async"></div></div>
+              <figcaption class="label" style="color:#9fbad3">Naples, ordered on the map</figcaption>
+            </figure>
+            <figure>
+              <div class="phone phone--flow"><div class="phone-screen"><img src="../assets/img/outsyd/roma-420.webp" srcset="../assets/img/outsyd/roma-420.webp 420w, ../assets/img/outsyd/roma-760.webp 760w" sizes="(max-width: 700px) 60vw, 24vw" width="420" height="913" alt="Rome itinerary starting at Castel Sant’Angelo" loading="lazy" decoding="async"></div></div>
+              <figcaption class="label" style="color:#9fbad3">Rome on foot, stop by stop</figcaption>
+            </figure>
+          </div>
+        </figure>
+      </section>
+
+      <!-- 03 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s3">
+        <div class="cs-label"><h2 class="label" id="s3">03 — Under the hood</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">One Flutter codebase for both platforms, a Firebase backend, and <em>29 Cloud Functions</em> doing the work the phone shouldn’t.</p>
+          <div class="prose reveal">
+            <p>Anything that costs money, holds a secret or must not be tampered with runs on the server: AI calls, partner APIs, scheduled price checks, cashback accounting, moderation. The app stays a fast, offline-tolerant client with its own map-tile cache.</p>
+          </div>
+        </div>
+        <div class="cs-full mt-m reveal">
+          <div class="arch" role="img" aria-label="Architecture: Flutter app talks to Firebase and Cloud Functions, which call external AI, maps, travel and affiliate services.">
+            <div class="arch-col">
+              <h4>App · Flutter</h4>
+              <ul>
+                <li>iOS &amp; Android from one codebase<small>Dart · Provider state</small></li>
+                <li>Map with offline tile cache<small>flutter_map · Stadia Maps</small></li>
+                <li>Sign-in: Google, Apple, email, guest<small>Firebase Auth</small></li>
+                <li>Italian / English<small>1,065 strings each</small></li>
+              </ul>
+            </div>
+            <div class="arch-link" aria-hidden="true"><svg viewBox="0 0 40 12"><path d="M0 6h38m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></div>
+            <div class="arch-col">
+              <h4>Backend · Firebase</h4>
+              <ul>
+                <li>29 Cloud Functions<small>callables, triggers, schedulers — Node.js</small></li>
+                <li>Firestore<small>itineraries, social, bookings, rewards</small></li>
+                <li>Cloud Messaging<small>price-drop and collaboration alerts</small></li>
+                <li>App Check · Storage · Hosting<small>rules hardened after a security audit</small></li>
+              </ul>
+            </div>
+            <div class="arch-link" aria-hidden="true"><svg viewBox="0 0 40 12"><path d="M0 6h38m-5-5 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></div>
+            <div class="arch-col">
+              <h4>Services</h4>
+              <ul>
+                <li>Gemini with Google Search grounding<small>itineraries, city tips, verified details</small></li>
+                <li>Geoapify · Photon · Wikipedia<small>geocoding, places, photos</small></li>
+                <li>OpenRouteService · OSRM<small>walking and driving routes</small></li>
+                <li>Travelpayouts · Stay22 · Tiqets · Omio<small>flights, hotels, tickets, trains — affiliate</small></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 -->
+      <section class="cs-section grid cs-row" id="decisions" aria-labelledby="s4">
+        <div class="cs-label"><h2 class="label" id="s4">04 — Decisions that mattered</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">The hard parts weren’t the features. They were the places where the app could <em>quietly lie</em> to its users.</p>
+        </div>
+        <div class="cs-full mt-m decisions">
+          <article class="decision reveal">
+            <span class="label">A · Data</span>
+            <h3>No number without a source.</h3>
+            <p>Early builds showed star ratings and discount badges. They looked great — and the ratings were random, the “−60%” a difference from an average. One traveller noticing would undo everything the app promises.</p>
+            <div class="split">
+              <div><span class="label">Decision</span><span>Ratings and prices come only from grounded lookups with validated fields. Unknown means the UI shows nothing.</span></div>
+              <div><span class="label">Why</span><span>Trust is the product — and fake ratings or discounts are a legal risk in the EU.</span></div>
+            </div>
+          </article>
+          <article class="decision reveal" style="--delay: .08s">
+            <span class="label">B · AI output</span>
+            <h3>Validate what the model returns.</h3>
+            <p>An LLM finds the exact ticket page for an attraction. Once it cached <code>search?query=None</code> — a page that loads fine and is completely wrong.</p>
+            <div class="split">
+              <div><span class="label">Decision</span><span>Every URL must have the shape of a real product page, survive a live fetch, and only the canonical address is stored.</span></div>
+              <div><span class="label">Lesson</span><span>“Valid page” is not “right page”. Check the shape of the answer, not just that there is one.</span></div>
+            </div>
+          </article>
+          <article class="decision reveal">
+            <span class="label">C · Security</span>
+            <h3>Treat the client as hostile.</h3>
+            <p>Cashback is real money, and a few of its fields were written by the phone. A modified app could have set its own cashback rate and multiplied what it was paid.</p>
+            <div class="split">
+              <div><span class="label">Decision</span><span>Server-side clamps on every client value, bookings created only as pending, withdrawals in transactions, admin actions behind custom claims, unused secrets pulled out of the app bundle.</span></div>
+              <div><span class="label">Next</span><span>This is the work that pushed me towards an M.Sc. in Cybersecurity.</span></div>
+            </div>
+          </article>
+          <article class="decision reveal" style="--delay: .08s">
+            <span class="label">D · Money</span>
+            <h3>Follow the money end to end.</h3>
+            <p>Flight links showed zero affiliate clicks for weeks. The code looked correct. The network, it turned out, only counted clicks that went through its own redirect.</p>
+            <div class="split">
+              <div><span class="label">Decision</span><span>Test every partner link with real requests and read the dashboards, not just the code. Flights now route through the tracked redirect.</span></div>
+              <div><span class="label">Lesson</span><span>When a number is zero, check the plumbing before assuming nobody clicked.</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 05 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s5">
+        <div class="cs-label"><h2 class="label" id="s5">05 — Beyond the code</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">Shipping is where the work starts.</p>
+          <div class="prose reveal">
+            <p>Outsyd taught me the parts nobody puts in a tutorial: store review cycles, release notes in two languages within a 500-character limit, privacy policies, affiliate applications, payout logic — and getting people to open the app at all. The TikTok account I run for it has passed a million views, mostly with carousels about where locals actually eat.</p>
+            <p>Some networks only approve publishers that have a real website, so I built one: a bilingual landing page on Firebase Hosting.</p>
+          </div>
+        </div>
+        <div class="cs-full mt-m reveal">
+          <div class="kpis">
+            <div class="kpi"><div class="kpi-value">29</div><div class="kpi-label">Cloud Functions in production</div></div>
+            <div class="kpi"><div class="kpi-value">270</div><div class="kpi-label">automated tests</div></div>
+            <div class="kpi"><div class="kpi-value">2</div><div class="kpi-label">languages, 1,065 strings each</div></div>
+            <div class="kpi"><div class="kpi-value">1.1M+</div><div class="kpi-label">TikTok views, @outsydapp</div></div>
+          </div>
+        </div>
+        <figure class="cs-full mt-l reveal">
+          <div class="figure-panel" style="--bg: #0a2a4a">
+            <div class="browser">
+              <div class="browser-bar"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">outsyd-6135d.web.app</span><span></span></div>
+              <div class="browser-view"><img src="../assets/img/outsyd/site-960.webp" srcset="../assets/img/outsyd/site-960.webp 960w, ../assets/img/outsyd/site-1600.webp 1600w" sizes="(max-width: 900px) 92vw, 80vw" width="960" height="600" alt="Outsyd landing page: “The AI that plans your trip like a local”, with App Store and Google Play buttons" loading="lazy" decoding="async"></div>
+            </div>
+          </div>
+          <figcaption class="fig-caption"><span>The Outsyd landing page — Italian and English, built for users and for affiliate reviewers.</span><a class="text-link" href="https://outsyd-6135d.web.app" target="_blank" rel="noopener">Visit ↗</a></figcaption>
+        </figure>
+      </section>
+
+      <!-- 06 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s6">
+        <div class="cs-label"><h2 class="label" id="s6">06 — What came next</h2></div>
+        <div class="cs-body">
+          <div class="prose reveal">
+            <p>Outsyd became the foundation of my bachelor’s thesis: <a href="sentinel.html">Outsyd Sentinel</a>, a machine-learning prototype that routes traveller feedback to the right team and reads its sentiment, designed to plug into the app’s existing comments.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <a class="next wrap" href="zaptopia.html">
+      <span class="label">Next case study</span>
+      <span class="next-title">Zaptopia <span class="arrow" aria-hidden="true">→</span></span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span data-year>2026</span> Gabriele Decandia</span>
+      <span>Built by hand with HTML, CSS and a little JavaScript. No cookies, no trackers.</span>
+      <a href="../#contact">Get in touch →</a>
+    </div>
+  </footer>
+</body>
+</html>

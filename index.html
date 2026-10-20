@@ -1,4 +1,400 @@
 <!doctype html>
-<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Zaptopia</title><meta http-equiv="refresh" content="0; url=/zaptopia/"><link rel="canonical" href="/zaptopia/"></head>
-<body style="background:#14163a;color:#fff;font-family:sans-serif"><p><a href="/zaptopia/" style="color:#ffd84d">Zaptopia</a></p></body></html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabriele Decandia — Developer & product builder</title>
+  <meta name="description" content="Gabriele Decandia builds software end to end: Outsyd, an AI travel planner live on iOS and Android; Zaptopia, a roguelike card game in beta; websites for local businesses; and a machine-learning thesis.">
+  <link rel="canonical" href="https://gabrideca7.github.io/">
+  <meta name="author" content="Gabriele Decandia">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gabriele Decandia">
+  <meta property="og:title" content="Gabriele Decandia — Developer & product builder">
+  <meta property="og:description" content="Apps on the stores, a game in beta, websites for local businesses and a machine-learning thesis — built end to end.">
+  <meta property="og:url" content="https://gabrideca7.github.io/">
+  <meta property="og:image" content="https://gabrideca7.github.io/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#f2efe7">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.className = d.className.replace('no-js', 'js');
+      try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') d.dataset.theme = t; } catch (e) {}
+    })();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gabriele Decandia",
+    "url": "https://gabrideca7.github.io/",
+    "email": "mailto:g.deca7@gmail.com",
+    "jobTitle": "Software developer",
+    "homeLocation": { "@type": "Place", "name": "Altamura, Italy" },
+    "sameAs": ["https://github.com/gabrideca7"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="Gabriele Decandia — home">Gabriele Decandia<span class="brand-dot">.</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-meta">
+        <span class="clock mono" data-clock>Altamura, IT <time>--:--</time></span>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.2"/><path class="half" d="M8 1.6a6.4 6.4 0 0 1 0 12.8z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-top">
+        <span class="label">Developer &amp; product builder</span>
+        <span class="label">Portfolio — Edition 2026</span>
+      </div>
+
+      <h1 class="hero-title" id="hero-title">
+        <span class="line line--1"><span>Gabriele</span></span>
+        <span class="line line--2"><span>Decandia<span class="dot">.</span></span></span>
+      </h1>
+
+      <div class="grid hero-grid">
+        <p class="lede hero-lede reveal">
+          I build software end to end — <em>product, design, code and launch.</em>
+          A travel app live on both app stores, a mobile game in beta, websites for businesses
+          in my hometown and a machine-learning thesis built on my own app.
+        </p>
+        <dl class="hero-facts reveal" style="--delay: .12s">
+          <div><dt class="label">Based in</dt><dd>Altamura, Puglia, Italy</dd></div>
+          <div><dt class="label">Now</dt><dd><span class="live-dot" aria-hidden="true"></span>Shipping Zaptopia 1.35 to beta testers</dd></div>
+          <div><dt class="label">Next</dt><dd>M.Sc. Cybersecurity, University of Pisa</dd></div>
+          <div><dt class="label">November</dt><dd>Travelling in the United States — let’s meet</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section wrap" id="work" aria-labelledby="work-title" style="padding-top: 0">
+      <div class="section-head reveal">
+        <h2 class="h2" id="work-title">Selected <em>work</em><sup>05</sup></h2>
+        <p class="label">2025 — 2026<br>Apps, a game, websites, research</p>
+      </div>
+
+      <div class="projects">
+
+        <!-- 01 Outsyd -->
+        <article class="project reveal">
+          <a class="media media--outsyd" href="work/outsyd.html" aria-label="Outsyd — read the case study">
+            <img class="syd" src="assets/img/outsyd/syd-360.webp" width="360" height="324" alt="" loading="lazy" decoding="async">
+            <div class="phone"><div class="phone-screen"><img src="assets/img/outsyd/napoli-420.webp" srcset="assets/img/outsyd/napoli-420.webp 420w, assets/img/outsyd/napoli-760.webp 760w" sizes="(max-width: 700px) 42vw, 22vw" width="420" height="913" alt="Outsyd: a day itinerary in Naples drawn on the map" loading="lazy" decoding="async"></div></div>
+            <div class="phone"><div class="phone-screen"><img src="assets/img/outsyd/home-420.webp" srcset="assets/img/outsyd/home-420.webp 420w, assets/img/outsyd/home-760.webp 760w" sizes="(max-width: 700px) 52vw, 26vw" width="420" height="913" alt="Outsyd home screen: “Where are we going today?”" loading="lazy" decoding="async"></div></div>
+            <div class="phone"><div class="phone-screen"><img src="assets/img/outsyd/roma-420.webp" srcset="assets/img/outsyd/roma-420.webp 420w, assets/img/outsyd/roma-760.webp 760w" sizes="(max-width: 700px) 42vw, 22vw" width="420" height="913" alt="Outsyd: a walking route through Rome with numbered stops" loading="lazy" decoding="async"></div></div>
+            <span class="media-caption">iOS · Android · Live</span>
+          </a>
+          <div class="grid project-info">
+            <span class="project-num mono">01</span>
+            <h3 class="project-title"><a href="work/outsyd.html">Outsyd</a></h3>
+            <p class="project-desc">AI travel planner. Type a city and get the day organised on a map — stops, timings, meals, transfers — in seconds. Plus flight deals, price alerts and real-money cashback.</p>
+            <div class="project-side">
+              <ul class="tags" aria-label="Tags">
+                <li class="tag tag--live">Live</li>
+                <li class="tag">Flutter</li>
+                <li class="tag">Firebase</li>
+                <li class="tag">Gemini</li>
+              </ul>
+              <a class="arrow-link" href="work/outsyd.html">Case study <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 Zaptopia -->
+        <article class="project reveal">
+          <a class="media media--zaptopia" href="work/zaptopia.html" aria-label="Zaptopia — read the case study">
+            <img class="env" src="assets/img/zaptopia/env-1400.webp" width="1024" height="572" alt="" loading="lazy" decoding="async">
+            <img class="zap-logo" src="assets/img/zaptopia/logo-480.webp" srcset="assets/img/zaptopia/logo-480.webp 480w, assets/img/zaptopia/logo-900.webp 900w" sizes="(max-width: 700px) 50vw, 26vw" width="480" height="342" alt="Zaptopia" loading="lazy" decoding="async">
+            <span class="zap-sub">Roguelike deck-builder · iOS &amp; Android · Beta</span>
+            <div class="phone phone--plain"><div class="phone-screen"><img src="assets/img/zaptopia/map-420.webp" srcset="assets/img/zaptopia/map-420.webp 420w, assets/img/zaptopia/map-760.webp 760w" sizes="(max-width: 700px) 40vw, 18vw" width="420" height="747" alt="Zaptopia world map with floating islands and a choice of path" loading="lazy" decoding="async"></div></div>
+            <div class="phone phone--plain"><div class="phone-screen"><img src="assets/img/zaptopia/battle-420.webp" srcset="assets/img/zaptopia/battle-420.webp 420w, assets/img/zaptopia/battle-760.webp 760w" sizes="(max-width: 700px) 46vw, 22vw" width="420" height="747" alt="A Zaptopia battle: a gnome boss across a four-lane 3D table" loading="lazy" decoding="async"></div></div>
+            <div class="phone phone--plain"><div class="phone-screen"><img src="assets/img/zaptopia/album-420.webp" srcset="assets/img/zaptopia/album-420.webp 420w, assets/img/zaptopia/album-760.webp 760w" sizes="(max-width: 700px) 40vw, 18vw" width="420" height="747" alt="Zaptopia card album with illustrated creature cards" loading="lazy" decoding="async"></div></div>
+          </a>
+          <div class="grid project-info">
+            <span class="project-num mono">02</span>
+            <h3 class="project-title"><a href="work/zaptopia.html">Zaptopia</a></h3>
+            <p class="project-desc">A roguelike card battler for phones. Creatures fight in lanes on a 3D table, combos multiply damage and Jokers bend the rules. From first prototype to closed beta on both stores in under two weeks.</p>
+            <div class="project-side">
+              <ul class="tags" aria-label="Tags">
+                <li class="tag tag--status">Beta</li>
+                <li class="tag">TypeScript</li>
+                <li class="tag">Phaser</li>
+                <li class="tag">Three.js</li>
+              </ul>
+              <a class="arrow-link" href="work/zaptopia.html">Case study <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 + 04 Websites -->
+        <div class="project-pair">
+          <article class="project reveal">
+            <a class="media media--43 media--site media--nicoletti" href="work/nicoletti.html" aria-label="Nicoletti Raffaele — read the case study">
+              <div class="browser-wrap">
+                <div class="browser">
+                  <div class="browser-bar"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">nicoletti raffaele · sofas &amp; beds</span><span></span></div>
+                  <div class="browser-view"><img src="assets/img/nicoletti/desk-960.webp" srcset="assets/img/nicoletti/desk-960.webp 960w, assets/img/nicoletti/desk-1600.webp 1600w" sizes="(max-width: 900px) 90vw, 40vw" width="960" height="600" alt="Nicoletti Raffaele website: a teal Chesterfield in a styled room, headline “Expertly crafted sofas and beds”" loading="lazy" decoding="async"></div>
+                </div>
+              </div>
+              <div class="phone phone--web" style="--sb:#31291f; --sbfg:#f4ece2"><div class="phone-screen"><span class="phone-status" aria-hidden="true">9:41<i></i></span><img src="assets/img/nicoletti/mobile-420.webp" srcset="assets/img/nicoletti/mobile-420.webp 420w, assets/img/nicoletti/mobile-760.webp 760w" sizes="(max-width: 700px) 46vw, 10vw" width="420" height="909" alt="Nicoletti Raffaele website on a phone, in English" loading="lazy" decoding="async"></div></div>
+            </a>
+            <div class="grid project-info">
+              <span class="project-num mono">03</span>
+              <h3 class="project-title"><a href="work/nicoletti.html">Nicoletti Raffaele</a></h3>
+              <p class="project-desc">Bilingual showcase for my uncle’s sofa workshop. Hand-coded, cookie-free, with a catalogue that lives in one data file — and every photo rebuilt from the workshop floor.</p>
+              <div class="project-side">
+                <ul class="tags" aria-label="Tags">
+                  <li class="tag">HTML · CSS · JS</li>
+                  <li class="tag">IT / EN</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" style="--delay: .1s">
+            <a class="media media--43 media--site media--rinaldi" href="work/rinaldi.html" aria-label="Caseificio Rinaldi Km Zero — read the case study">
+              <div class="browser-wrap">
+                <div class="browser">
+                  <div class="browser-bar"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">caseificiorinaldikmzero.it</span><span></span></div>
+                  <div class="browser-view"><img src="assets/img/rinaldi/desk-960.webp" srcset="assets/img/rinaldi/desk-960.webp 960w, assets/img/rinaldi/desk-1600.webp 1600w" sizes="(max-width: 900px) 90vw, 40vw" width="960" height="600" alt="Caseificio Rinaldi website: a hanging caciocavallo next to the headline “Il latte di oggi, sulla tua tavola domani”" loading="lazy" decoding="async"></div>
+                </div>
+              </div>
+              <div class="phone phone--web" style="--sb:#ffffff; --sbfg:#111111"><div class="phone-screen"><span class="phone-status" aria-hidden="true">9:41<i></i></span><img src="assets/img/rinaldi/mobile-420.webp" srcset="assets/img/rinaldi/mobile-420.webp 420w, assets/img/rinaldi/mobile-760.webp 760w" sizes="(max-width: 700px) 46vw, 10vw" width="420" height="909" alt="Caseificio Rinaldi website on a phone" loading="lazy" decoding="async"></div></div>
+            </a>
+            <div class="grid project-info">
+              <span class="project-num mono">04</span>
+              <h3 class="project-title"><a href="work/rinaldi.html">Caseificio Rinaldi</a></h3>
+              <p class="project-desc">Online shop, brand guidelines and local presence for a new artisan dairy in Altamura — set up so the people behind the counter can run it themselves.</p>
+              <div class="project-side">
+                <ul class="tags" aria-label="Tags">
+                  <li class="tag tag--live">Live</li>
+                  <li class="tag">WooCommerce</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 05 Sentinel -->
+        <article class="project reveal">
+          <a class="media media--wide media--sentinel" href="work/sentinel.html" aria-label="Outsyd Sentinel — read the case study">
+            <div>
+              <p class="sentinel-score">100<small>%</small></p>
+              <p class="sentinel-note">accuracy on the test set — and why I don’t trust it.</p>
+            </div>
+            <div class="sentinel-mats" aria-hidden="true">
+              <div class="cm">
+                <div class="cm-grid" style="--n: 4">
+                  <span class="cm-cell hot" style="--v: 1">36</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span>
+                  <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">44</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span>
+                  <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">36</span><span class="cm-cell" style="--v: 0">0</span>
+                  <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">44</span>
+                </div>
+                <p class="cm-cap">Department · 4 classes</p>
+              </div>
+              <div class="cm cm--sent">
+                <div class="cm-grid" style="--n: 2">
+                  <span class="cm-cell hot" style="--v: 1">71</span><span class="cm-cell" style="--v: 0">0</span>
+                  <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">89</span>
+                </div>
+                <p class="cm-cap">Sentiment</p>
+              </div>
+            </div>
+          </a>
+          <div class="grid project-info">
+            <span class="project-num mono">05</span>
+            <h3 class="project-title"><a href="work/sentinel.html">Outsyd Sentinel</a></h3>
+            <p class="project-desc">My bachelor’s thesis project: machine learning that routes traveller reviews to the right department and reads their sentiment. The trained model runs live in the case study — try to break it.</p>
+            <div class="project-side">
+              <ul class="tags" aria-label="Tags">
+                <li class="tag tag--status">Thesis</li>
+                <li class="tag">Python</li>
+                <li class="tag">scikit-learn</li>
+              </ul>
+              <a class="arrow-link" href="work/sentinel.html">Case study <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Numbers -->
+    <section class="section wrap" aria-labelledby="numbers-title" style="padding-top: 0">
+      <div class="section-head reveal">
+        <h2 class="h2" id="numbers-title">By the <em>numbers</em></h2>
+        <p class="label">Counted from the code and the dashboards — not rounded up.</p>
+      </div>
+      <ol class="numbers">
+        <li class="grid number reveal">
+          <span class="number-value">29</span>
+          <span class="number-label">Cloud Functions behind Outsyd — itineraries, flight deals, price alerts, cashback, moderation.</span>
+          <span class="number-source label">Outsyd · backend</span>
+        </li>
+        <li class="grid number reveal">
+          <span class="number-value">270</span>
+          <span class="number-label">automated tests guarding Outsyd’s Flutter codebase.</span>
+          <span class="number-source label">Outsyd · test suite</span>
+        </li>
+        <li class="grid number reveal">
+          <span class="number-value">36</span>
+          <span class="number-label">Android release builds of Zaptopia in its first three weeks.</span>
+          <span class="number-source label">Zaptopia · Sep 30 – Oct 20, 2026</span>
+        </li>
+        <li class="grid number reveal">
+          <span class="number-value">1,065</span>
+          <span class="number-label">interface strings in Outsyd, every one in Italian and English.</span>
+          <span class="number-source label">Outsyd · localisation</span>
+        </li>
+        <li class="grid number reveal">
+          <span class="number-value">1.1M+</span>
+          <span class="number-label">views on the TikTok account I run to bring travellers to Outsyd.</span>
+          <span class="number-source label">@outsydapp · Sep 2026</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Principles -->
+    <section class="section wrap" aria-labelledby="how-title" style="padding-top: 0">
+      <div class="section-head reveal">
+        <h2 class="h2" id="how-title">How I <em>work</em></h2>
+        <p class="label">Four rules, each learned on a real project.</p>
+      </div>
+      <div class="principles">
+        <article class="principle reveal">
+          <span class="label">01</span>
+          <div>
+            <h3>No number without a source.</h3>
+            <p>Outsyd once showed star ratings and “−60%” badges that looked great and were invented. I removed every one. A rating, a price or a discount now appears only when it comes from a real source — otherwise the interface shows nothing. Trust is the product.</p>
+            <a class="seen text-link" href="work/outsyd.html#decisions">Seen in Outsyd</a>
+          </div>
+        </article>
+        <article class="principle reveal" style="--delay: .08s">
+          <span class="label">02</span>
+          <div>
+            <h3>Treat the client as hostile.</h3>
+            <p>When an app moves real money, every field a phone writes is a possible attack. Outsyd’s cashback is clamped and validated on the server, bookings can only be created as pending, withdrawals run in server-side transactions. That mindset is why my next step is cybersecurity.</p>
+            <a class="seen text-link" href="work/outsyd.html#decisions">Seen in Outsyd</a>
+          </div>
+        </article>
+        <article class="principle reveal">
+          <span class="label">03</span>
+          <div>
+            <h3>Ship, then listen.</h3>
+            <p>Zaptopia went through 36 release builds in three weeks, each one shaped by tester feedback. A bot plays full runs through the real game code, so balance changes get measured instead of guessed.</p>
+            <a class="seen text-link" href="work/zaptopia.html#engineering">Seen in Zaptopia</a>
+          </div>
+        </article>
+        <article class="principle reveal" style="--delay: .08s">
+          <span class="label">04</span>
+          <div>
+            <h3>AI-assisted, never AI-decided.</h3>
+            <p>I use AI coding agents every day — they make one developer fast. The architecture, the trade-offs, the review and the testing on real devices stay with me, and so does the responsibility for what ships.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section wrap" id="about" aria-labelledby="about-title" style="padding-top: 0">
+      <div class="grid about-grid">
+        <div class="about-label reveal">
+          <h2 class="label" id="about-title">About</h2>
+        </div>
+        <div class="about-body">
+          <p class="lede reveal">I’m Gabriele, a developer from Altamura — a town on the Murgia plateau in southern Italy, <em>famous mostly for its bread.</em></p>
+          <div class="prose reveal">
+            <p>Outsyd started from a personal annoyance: arriving in a port city with a few hours and no plan. I built it during my bachelor’s in Computer Science, put it on both app stores and have kept shipping since — features, fixes, release notes, store listings, affiliate partnerships and a TikTok account to bring people in.</p>
+            <p>Along the way I started building for the people around me: a showcase site for my uncle’s sofa workshop, an online shop for a family dairy and, this autumn, a game of my own.</p>
+            <p>I’m spending November 2026 in the United States. When I’m back, I start an <strong>M.Sc. in Cybersecurity at the University of Pisa</strong>.</p>
+          </div>
+
+          <dl class="facts-list reveal">
+            <div class="facts-row">
+              <dt class="label">Education</dt>
+              <dd>
+                <div class="edu"><strong>B.Sc. Computer Science (L-31) — graduated</strong><span>Thesis: Outsyd Sentinel, machine learning for business processes</span></div>
+                <div class="edu mt-s"><strong>M.Sc. Cybersecurity — University of Pisa</strong><span>Starting after the trip</span></div>
+              </dd>
+            </div>
+            <div class="facts-row">
+              <dt class="label">Languages &amp; frameworks</dt>
+              <dd>Dart &amp; Flutter · TypeScript · JavaScript · Python · Node.js · Phaser · Three.js · Capacitor · scikit-learn · Streamlit</dd>
+            </div>
+            <div class="facts-row">
+              <dt class="label">Platforms</dt>
+              <dd>Firebase (Auth, Firestore, Cloud Functions, Messaging, App Check, Hosting) · Supabase · WordPress &amp; WooCommerce · App Store Connect · Google Play Console · GitHub</dd>
+            </div>
+            <div class="facts-row">
+              <dt class="label">Beyond code</dt>
+              <dd>Store listings and release notes · app review cycles · affiliate networks (Travelpayouts, Impact, CJ) · short-form video marketing</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section wrap contact" id="contact" aria-labelledby="contact-title" style="padding-top: 0">
+      <div class="section-head reveal" style="border-bottom: 0; margin-bottom: 0">
+        <span class="label">Contact</span>
+        <span class="label">Altamura → USA → Pisa</span>
+      </div>
+      <h2 class="contact-title reveal" id="contact-title">Let’s build something — <em>or just grab a coffee.</em></h2>
+      <div class="grid contact-grid">
+        <p class="contact-copy reveal">I’m in the United States throughout November 2026. If you’re working on something interesting, want to see Zaptopia on a real phone or just want to talk shop, write me.</p>
+        <div class="contact-action reveal" style="--delay: .1s">
+          <div class="email">
+            <a class="email-link" href="mailto:g.deca7@gmail.com">g.deca7@gmail.com</a>
+            <button class="copy-btn" type="button" data-copy="g.deca7@gmail.com" aria-live="polite">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="2"/><path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5"/></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+          <div class="contact-links">
+            <a class="arrow-link arrow-link--ne" href="https://github.com/gabrideca7" target="_blank" rel="noopener">GitHub <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="arrow-link arrow-link--ne" href="https://apps.apple.com/app/id6756832439" target="_blank" rel="noopener">Outsyd on the App Store <span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="arrow-link arrow-link--ne" href="https://play.google.com/store/apps/details?id=dev.outsyd.app" target="_blank" rel="noopener">Outsyd on Google Play <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span data-year>2026</span> Gabriele Decandia</span>
+      <span>Built by hand with HTML, CSS and a little JavaScript. No cookies, no trackers.</span>
+      <a href="#main">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
