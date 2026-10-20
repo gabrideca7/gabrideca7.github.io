@@ -1015,10 +1015,57 @@ code, .code {
 
 /* ---------- About ---------- */
 .about-grid { row-gap: 48px; }
-.about-label { grid-column: span 3; }
-.about-body { grid-column: 4 / span 7; }
+.about-label {
+  grid-column: span 3;
+  align-self: start;
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+}
+.about-body { grid-column: 5 / span 7; }
+
+.about-photos { margin-top: 28px; }
+.about-photo {
+  overflow: hidden;
+  border-radius: calc(var(--radius) * 0.8);
+  background: var(--paper-2);
+}
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.about-photo--main { width: 88%; }
+.about-photo--grad {
+  position: relative;
+  width: 54%;
+  margin: -34% 0 0 auto;
+  outline: 6px solid var(--paper);
+  rotate: 3deg;
+  box-shadow: var(--shadow-md);
+  transition: rotate 0.6s var(--ease), transform 0.6s var(--ease);
+}
+.about-photo--grad:hover { rotate: 0deg; transform: scale(1.03); }
+.about-caption {
+  margin-top: 16px;
+  max-width: 30ch;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+@media (max-width: 1000px) {
+  .about-label { position: static; }
+  .about-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: start;
+  }
+  .about-photo--main,
+  .about-photo--grad { width: 100%; margin: 0; rotate: 0deg; outline: 0; box-shadow: none; }
+  .about-caption { grid-column: 1 / -1; margin-top: 4px; }
+}
 .about-body .lede + .prose { margin-top: 32px; }
-.about-photo { grid-column: 11 / span 2; }
 
 .facts-list { margin-top: 56px; border-top: 1px solid var(--rule); }
 .facts-row {
