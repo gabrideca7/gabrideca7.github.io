@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="it" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Outsyd Sentinel — Tesi di machine learning · Gabriele Decandia</title>
+  <meta name="description" content="Caso studio: Outsyd Sentinel, un prototipo di machine learning che smista le recensioni dei viaggiatori al reparto giusto e ne classifica il sentiment. Prova il modello addestrato dal vivo nel browser.">
+  <link rel="canonical" href="https://gabrideca7.github.io/it/work/sentinel.html">
+  <link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/sentinel.html">
+  <link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/sentinel.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Outsyd Sentinel — Tesi di machine learning">
+  <meta property="og:description" content="Smistare le recensioni dei viaggiatori con il machine learning — e uno sguardo onesto a un punteggio perfetto.">
+  <meta property="og:url" content="https://gabrideca7.github.io/it/work/sentinel.html">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:image" content="https://gabrideca7.github.io/assets/img/og-it.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f2efe7">
+  <link rel="icon" href="../../favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../../favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="preload" href="../../assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/data/sentinel-model.json" as="fetch" type="application/json" crossorigin>
+  <link rel="stylesheet" href="../../assets/css/style.css?v=2026102202">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.className = d.className.replace('no-js', 'js');
+      try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') d.dataset.theme = t; } catch (e) {}
+    })();
+  </script>
+  <script src="../../assets/js/main.js?v=2026102202" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../" aria-label="Gabriele Decandia — home">Gabriele Decandia<span class="brand-dot">.</span></a>
+      <nav class="nav" aria-label="Principale">
+        <a href="../#work" aria-current="page">Lavori</a>
+        <a href="../#about">Chi sono</a>
+        <a href="../#contact">Contatti</a>
+      </nav>
+      <div class="header-meta">
+        <span class="clock mono" data-clock>Altamura, IT <time>--:--</time></span>
+        <nav class="lang-switch mono" aria-label="Lingua"><a href="../../work/sentinel.html" hreflang="en" lang="en" title="English version">EN</a><span aria-current="true">IT</span></nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambia tema">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.2"/><path class="half" d="M8 1.6a6.4 6.4 0 0 1 0 12.8z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap cs-hero">
+      <a class="cs-back" href="../#work"><span class="arrow" aria-hidden="true">←</span> Tutti i lavori</a>
+      <div class="cs-kicker"><span class="label">Caso studio 05</span><span class="tag tag--status">Progetto di tesi</span></div>
+      <h1 class="cs-title cs-title--long">Outsyd Sentinel</h1>
+      <p class="lede cs-sub">Machine learning che manda ogni recensione al team giusto — <em>e uno sguardo onesto a un punteggio perfetto.</em></p>
+
+      <dl class="grid cs-meta">
+        <div><dt class="label">Contesto</dt><dd>Laurea triennale in Informatica (L-31) — project work sul machine learning per i processi aziendali</dd></div>
+        <div><dt class="label">Ruolo</dt><dd>Da solo — dati, modelli, dashboard, elaborato</dd></div>
+        <div><dt class="label">Tecnologie</dt><dd>Python · scikit-learn · pandas · Streamlit · seaborn</dd></div>
+        <div><dt class="label">Anno</dt><dd>2026</dd></div>
+      </dl>
+    </section>
+
+    <section class="wrap cs-cover reveal" aria-label="Risultati in sintesi">
+      <div class="media media--wide media--sentinel">
+        <div>
+          <p class="sentinel-score">100<small>%</small></p>
+          <p class="sentinel-note">di accuratezza sul test set — e perché non mi fido.</p>
+        </div>
+        <div class="sentinel-mats" aria-hidden="true">
+          <div class="cm">
+            <div class="cm-grid" style="--n: 4">
+              <span class="cm-cell hot" style="--v: 1">36</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span>
+              <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">44</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span>
+              <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">36</span><span class="cm-cell" style="--v: 0">0</span>
+              <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">44</span>
+            </div>
+            <p class="cm-cap">Reparto · 4 classi</p>
+          </div>
+          <div class="cm cm--sent">
+            <div class="cm-grid" style="--n: 2">
+              <span class="cm-cell hot" style="--v: 1">71</span><span class="cm-cell" style="--v: 0">0</span>
+              <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">89</span>
+            </div>
+            <p class="cm-cap">Sentiment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <!-- 01 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s1">
+        <div class="cs-label"><h2 class="label" id="s1">01 — L’idea</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">Ogni lamentela ha un responsabile. <em>Il segreto è fargliela arrivare per primo.</em></p>
+          <div class="prose reveal">
+            <p>Hotel e app di viaggio ricevono un flusso continuo di commenti scritti liberamente, e quasi tutti finiscono in un’unica casella. Sentinel legge ogni recensione e prende due decisioni: quale reparto deve occuparsene — accoglienza, cibo e ristorazione, servizi e Wi‑Fi o posizione — e se l’ospite è soddisfatto. Chi può sistemare una doccia fredda vede la lamentela che la riguarda, invece che tutti o nessuno.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s2">
+        <div class="cs-label"><h2 class="label" id="s2">02 — Come funziona</h2></div>
+        <div class="cs-body">
+          <ol class="pipeline reveal">
+            <li><strong>Dati</strong>800 recensioni sintetiche e bilanciate, con la stessa struttura dei commenti di Outsyd — id, utente, testo, data. Nessun dato personale.</li>
+            <li><strong>Pre-elaborazione</strong>Tutto in minuscolo, punteggiatura rimossa, un bag of words costruito con <code>CountVectorizer</code>.</li>
+            <li><strong>Due modelli</strong>Regressione logistica per il reparto (4 classi) e per il sentiment (2), addestrati sull’80% dei dati e testati sul restante 20%.</li>
+            <li><strong>Dashboard</strong>Streamlit: analizza una recensione con il grado di sicurezza, elabora un CSV in blocco, mostra le metriche.</li>
+          </ol>
+          <div class="prose reveal">
+            <p><strong>Perché non una rete neurale?</strong> 800 frasi brevi non ne hanno bisogno. La regressione logistica si addestra in millisecondi, i suoi pesi si possono leggere e spiegare e un piccolo team può riaddestrarla su un portatile — per un processo aziendale conta più di qualche punto di accuratezza.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 -->
+      <section class="cs-section grid cs-row" id="try" aria-labelledby="s3">
+        <div class="cs-label"><h2 class="label" id="s3">03 — Provalo</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">Questo è il modello addestrato, <em>che gira nel tuo browser.</em></p>
+          <div class="prose reveal">
+            <p>Ho esportato il vocabolario e i pesi della regressione dalla pipeline di scikit-learn in un file JSON da 6&nbsp;KB. La pagina divide il testo in parole esattamente come fa <code>CountVectorizer</code> e fa i calcoli in JavaScript — i risultati coincidono con quelli di Python fino alla quarta cifra decimale. Scrivi una recensione o parti da un esempio.</p>
+          </div>
+        </div>
+        <div class="cs-full mt-m reveal">
+          <div class="demo" data-sentinel data-model="../../assets/data/sentinel-model.json">
+            <div class="demo-in">
+              <label class="label" for="review">Un viaggiatore scrive…</label>
+              <textarea id="review" spellcheck="false" autocomplete="off">Il wifi era lento</textarea>
+              <div class="demo-chips" aria-label="Esempi">
+                <button class="chip-btn" type="button" data-example="Il wifi era lento">Il wifi era lento</button>
+                <button class="chip-btn" type="button" data-example="Lo staff della reception era gentile e sorridente">Lo staff della reception era gentile e sorridente</button>
+                <button class="chip-btn" type="button" data-example="Quartiere rumoroso e strada trafficata">Quartiere rumoroso e strada trafficata</button>
+                <button class="chip-btn" type="button" data-example="La vista sul mare era stupenda">La vista sul mare era stupenda <em>— parola mai vista</em></button>
+                <button class="chip-btn" type="button" data-example="Il letto era scomodo ma il caffè era ottimo">Il letto era scomodo ma il caffè era ottimo <em>— giudizi opposti</em></button>
+                <button class="chip-btn" type="button" data-example="Absolutely loved the breakfast">Absolutely loved the breakfast <em>— in inglese</em></button>
+              </div>
+              <p class="demo-hint">Gli ultimi tre servono a metterlo in crisi.</p>
+            </div>
+            <div class="demo-out" aria-live="polite">
+              <div>
+                <span class="label">Smista a</span>
+                <p class="result-value" data-out="cat">—</p>
+                <div class="bars" data-bars="cat"></div>
+              </div>
+              <div>
+                <span class="label">Sentiment</span>
+                <p class="result-value" data-out="sent">—</p>
+                <div class="bars" data-bars="sent"></div>
+              </div>
+              <div>
+                <span class="label">Parole che il modello conosce</span>
+                <p class="tokens mt-s" data-out="tokens"></p>
+              </div>
+              <p class="confidence-warn" data-out="warn"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s4">
+        <div class="cs-label"><h2 class="label" id="s4">04 — Il problema del 100%</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">Entrambi i modelli hanno fatto 100% sul test set. <em>Dovrebbe insospettirti.</em></p>
+          <div class="prose reveal">
+            <p>Il test set veniva dallo stesso generatore del training set: lo stesso vocabolario di 86 parole, le stesse strutture di frase. Separarli alla perfezione dimostra che la pipeline funziona dall’inizio alla fine — non che capisca le recensioni. Dagli una frase che il generatore non ha mai scritto e la sicurezza sul sentiment scivola verso il testa o croce: <em>«la vista sul mare era stupenda»</em> risulta leggermente negativa, perché la parola «stupenda» non l’ha mai vista.</p>
+            <p>Cosa servirebbe per usarlo davvero: recensioni etichettate di ospiti reali; TF-IDF con coppie di parole, così «non funzionava» viene letto come un’unica idea negativa; un transformer multilingue, se il budget lo permette; e una Cloud Function che etichetta ogni commento prima che venga scritto nel database.</p>
+          </div>
+        </div>
+        <div class="cs-full mt-l reveal">
+          <div class="figure-panel">
+            <div class="cm-pair">
+              <div class="cm" style="--fg: var(--ink)">
+                <div class="cm-grid" style="--n: 4">
+                  <span class="cm-cell hot" style="--v: 1">36</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span>
+                  <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">44</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span>
+                  <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">36</span><span class="cm-cell" style="--v: 0">0</span>
+                  <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">44</span>
+                </div>
+                <div class="cm-axis"><span>Accoglienza</span><span>Cibo</span><span>Posizione</span><span>Servizi</span></div>
+                <p class="cm-cap">Reparto — previsto e reale, 160 recensioni di test</p>
+              </div>
+              <div class="cm cm--sent" style="--fg: var(--ink)">
+                <div class="cm-grid" style="--n: 2">
+                  <span class="cm-cell hot" style="--v: 1">71</span><span class="cm-cell" style="--v: 0">0</span>
+                  <span class="cm-cell" style="--v: 0">0</span><span class="cm-cell hot" style="--v: 1">89</span>
+                </div>
+                <div class="cm-axis"><span>Negativo</span><span>Positivo</span></div>
+                <p class="cm-cap">Sentiment — previsto e reale</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s5">
+        <div class="cs-label"><h2 class="label" id="s5">05 — Il legame con Outsyd</h2></div>
+        <div class="cs-body">
+          <div class="prose reveal">
+            <p>Sentinel è stato progettato intorno ai dati che <a href="outsyd.html">Outsyd</a> ha già. I commenti dell’app sono salvati con gli stessi campi prodotti dal generatore, quindi il classificatore può stare in una Cloud Function tra l’utente e il database e aggiungere a ogni commento reparto e sentiment prima del salvataggio.</p>
+            <p>La tesi racconta tutto il percorso — requisiti, sviluppo iterativo, valutazione e suoi limiti — e collega ogni passaggio agli esami che ci stanno dietro: probabilità e statistica, algoritmi, basi di dati, organizzazione e marketing.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <a class="next wrap" href="outsyd.html">
+      <span class="label">Si ricomincia</span>
+      <span class="next-title">Outsyd <span class="arrow" aria-hidden="true">→</span></span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span data-year>2026</span> Gabriele Decandia</span>
+      <span>Fatto a mano con HTML, CSS e un po’ di JavaScript. Niente cookie, niente tracciamento.</span>
+      <a href="../#contact">Scrivimi →</a>
+    </div>
+  </footer>
+</body>
+</html>

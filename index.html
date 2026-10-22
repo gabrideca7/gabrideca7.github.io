@@ -6,6 +6,9 @@
   <title>Gabriele Decandia — Developer & product builder</title>
   <meta name="description" content="Gabriele Decandia builds software end to end: Outsyd, an AI travel planner live on iOS and Android; Zaptopia, a roguelike card game in beta; websites for local businesses; and a machine-learning thesis.">
   <link rel="canonical" href="https://gabrideca7.github.io/">
+  <link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/">
+  <link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/">
+  <link rel="alternate" hreflang="x-default" href="https://gabrideca7.github.io/">
   <meta name="author" content="Gabriele Decandia">
 
   <meta property="og:type" content="website">
@@ -25,7 +28,7 @@
 
   <link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=2026102202">
   <script>
     (function () {
       var d = document.documentElement;
@@ -33,7 +36,7 @@
       try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') d.dataset.theme = t; } catch (e) {}
     })();
   </script>
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=2026102202" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -61,6 +64,7 @@
       </nav>
       <div class="header-meta">
         <span class="clock mono" data-clock>Altamura, IT <time>--:--</time></span>
+        <nav class="lang-switch mono" aria-label="Language"><span aria-current="true">EN</span><a href="it/" hreflang="it" lang="it" title="Versione italiana">IT</a></nav>
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
           <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.2"/><path class="half" d="M8 1.6a6.4 6.4 0 0 1 0 12.8z" fill="currentColor"/></svg>
         </button>
@@ -85,7 +89,7 @@
         <p class="lede hero-lede reveal">
           I build software end to end — <em>product, design, code and launch.</em>
           A travel app live on both app stores, a mobile game in beta, websites for businesses
-          in my hometown and a machine-learning thesis built on my own app.
+          in my hometown, a machine-learning thesis built on my own app — and plenty of custom-built PCs.
         </p>
         <dl class="hero-facts reveal" style="--delay: .12s">
           <div><dt class="label">Based in</dt><dd>Altamura, Puglia, Italy</dd></div>
@@ -325,6 +329,33 @@
       </div>
     </section>
 
+    <!-- PC builds -->
+    <section class="section wrap" id="builds" aria-labelledby="builds-title" style="padding-top: 0">
+      <div class="section-head reveal">
+        <h2 class="h2" id="builds-title">I build <em>machines,</em> too.</h2>
+        <p class="label">Custom PC builds<br>Assembled by hand</p>
+      </div>
+      <div class="grid builds-intro">
+        <p class="lede reveal">Software is half of it. I have extensive hands-on experience building custom PCs — <em>from the parts list to the first stable boot.</em></p>
+        <div class="builds-skills reveal" style="--delay: .1s">
+          <ul>
+            <li>Parts chosen around a budget and a use: gaming, work, streaming</li>
+            <li>Compatibility, power and thermal planning</li>
+            <li>Assembly, cable management and airflow</li>
+            <li>BIOS setup, updates and stress testing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="builds reveal" role="list" aria-label="Custom PC builds">
+          <figure role="listitem" style="--r: 0.7172"><img src="assets/img/builds/red-344.webp" srcset="assets/img/builds/red-344.webp 344w, assets/img/builds/red-645.webp 645w" sizes="(max-width: 800px) 273px, 16vw" width="344" height="480" alt="Black dual-chamber build with red fans, a tower air cooler and a GeForce RTX graphics card" loading="lazy" decoding="async"></figure>
+          <figure role="listitem" style="--r: 1"><img src="assets/img/builds/white-mesh-480.webp" srcset="assets/img/builds/white-mesh-480.webp 480w, assets/img/builds/white-mesh-900.webp 900w" sizes="(max-width: 800px) 380px, 22vw" width="480" height="480" alt="All-white build in a mesh case: white tower cooler, white GeForce RTX and white sleeved cables" loading="lazy" decoding="async"></figure>
+          <figure role="listitem" style="--r: 1"><img src="assets/img/builds/cube-480.webp" srcset="assets/img/builds/cube-480.webp 480w, assets/img/builds/cube-900.webp 900w" sizes="(max-width: 800px) 380px, 22vw" width="480" height="480" alt="Black cube case with glass panels and blue and purple RGB fans" loading="lazy" decoding="async"></figure>
+          <figure role="listitem" style="--r: 0.5664"><img src="assets/img/builds/white-panoramic-272.webp" srcset="assets/img/builds/white-panoramic-272.webp 272w, assets/img/builds/white-panoramic-510.webp 510w" sizes="(max-width: 800px) 215px, 12vw" width="272" height="480" alt="Compact white panoramic build with an RGB air cooler and a white sleeved GPU cable" loading="lazy" decoding="async"></figure>
+          <figure role="listitem" style="--r: 1"><img src="assets/img/builds/blue-480.webp" srcset="assets/img/builds/blue-480.webp 480w, assets/img/builds/blue-900.webp 900w" sizes="(max-width: 800px) 380px, 22vw" width="480" height="480" alt="Black build with blue ring fans, a tower cooler and a GeForce RTX card" loading="lazy" decoding="async"></figure>
+      </div>
+      <p class="builds-note">A few of my builds — black and all-white, air-cooled, in mesh and panoramic glass cases.</p>
+    </section>
+
     <!-- About -->
     <section class="section wrap" id="about" aria-labelledby="about-title" style="padding-top: 0">
       <div class="grid about-grid">
@@ -363,6 +394,10 @@
             <div class="facts-row">
               <dt class="label">Platforms</dt>
               <dd>Firebase (Auth, Firestore, Cloud Functions, Messaging, App Check, Hosting) · Supabase · WordPress &amp; WooCommerce · App Store Connect · Google Play Console · GitHub</dd>
+            </div>
+            <div class="facts-row">
+              <dt class="label">Hardware</dt>
+              <dd>Custom PC building — part selection and compatibility, assembly, cable management, airflow and thermals, BIOS setup, stress testing</dd>
             </div>
             <div class="facts-row">
               <dt class="label">Beyond code</dt>

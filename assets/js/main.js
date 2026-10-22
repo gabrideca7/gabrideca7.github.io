@@ -3,6 +3,26 @@
 (() => {
   const root = document.documentElement;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const IT = (root.lang || '').toLowerCase().startsWith('it');
+  const t = IT ? {
+    toLight: 'Passa al tema chiaro',
+    toDark: 'Passa al tema scuro',
+    copied: 'Copiato',
+    noModel: 'Non riesco a caricare il modello: prova a ricaricare la pagina.',
+    empty: 'Scrivi una frase per vedere cosa ne pensa il modello.',
+    unknown: 'Nessuna di queste parole è nel vocabolario di 86 parole: il modello sta tirando a indovinare.',
+    coinFlip: 'La sicurezza sul sentiment è vicina al testa o croce: la frase è fuori da ciò che i dati di addestramento coprivano.',
+    modelLabel: 'Etichetta del modello',
+  } : {
+    toLight: 'Switch to light theme',
+    toDark: 'Switch to dark theme',
+    copied: 'Copied',
+    noModel: 'The model could not be loaded — try reloading the page.',
+    empty: 'Type a sentence to see what the model thinks.',
+    unknown: 'None of these words are in the 86-word vocabulary — the model is guessing from its priors.',
+    coinFlip: 'Sentiment confidence is close to a coin flip: this sentence is outside what the training data covered.',
+    modelLabel: 'Model label',
+  };
 
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch { return null; } },
@@ -17,11 +37,12 @@
     if (!toggle) return;
     const dark = currentTheme() === 'dark';
     toggle.setAttribute('aria-pressed', String(dark));
-    toggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+    toggle.setAttribute('aria-label', dark ? t.toLight : t.toDark);
     const meta = document.querySelector('meta[name="theme-color"]:not([media])');
     if (meta) meta.content = getComputedStyle(document.body).backgroundColor;
   };
   toggle?.addEventListener('click', () => {
+    // Applied synchronously, with no transition: the switch never depends on animation frames.
     const next = currentTheme() === 'dark' ? 'light' : 'dark';
     root.dataset.theme = next;
     store.set('theme', next);
@@ -91,7 +112,7 @@
         ta.remove();
       }
       btn.dataset.copied = 'true';
-      if (label) label.textContent = 'Copied';
+      if (label) label.textContent = t.copied;
       setTimeout(() => {
         btn.dataset.copied = 'false';
         if (label) label.textContent = original;
@@ -124,7 +145,14 @@
       tokens: el.querySelector('[data-out="tokens"]'),
       warn: el.querySelector('[data-out="warn"]'),
     };
-    const LABELS = {
+    const LABELS = IT ? {
+      'Accoglienza': 'Accoglienza',
+      'Cibo/Ristorazione': 'Cibo e ristorazione',
+      'Posizione': 'Posizione',
+      'Servizi/Wifi': 'Servizi e Wi‑Fi',
+      'Positivo': 'Positivo',
+      'Negativo': 'Negativo',
+    } : {
       'Accoglienza': 'Front desk',
       'Cibo/Ristorazione': 'Food & dining',
       'Posizione': 'Location',
@@ -138,7 +166,7 @@
       const res = await fetch(el.dataset.model);
       model = await res.json();
     } catch {
-      out.warn.textContent = 'The model could not be loaded — try reloading the page.';
+      out.warn.textContent = t.noModel;
       return;
     }
 
@@ -148,8 +176,8 @@
 
     const vectorize = (tokens, vocab) => {
       const counts = new Map();
-      for (const t of tokens) {
-        const i = vocab[t];
+      for (const tok of tokens) {
+        const i = vocab[tok];
         if (i !== undefined) counts.set(i, (counts.get(i) || 0) + 1);
       }
       return counts;
@@ -214,27 +242,28 @@
       const sent = predict(model.sentiment, tokens);
       const bestCat = cat.reduce((a, b) => (b.p > a.p ? b : a));
       const bestSent = sent.reduce((a, b) => (b.p > a.p ? b : a));
-      out.cat.innerHTML = '';
-      out.cat.append(document.createTextNode(LABELS[bestCat.c]));
-      const small1 = document.createElement('small');
-      small1.textContent = `Model label: ${bestCat.c}`;
-      out.cat.append(small1);
-      out.sent.innerHTML = '';
-      out.sent.append(document.createTextNode(LABELS[bestSent.c]));
-      const small2 = document.createElement('small');
-      small2.textContent = `Model label: ${bestSent.c}`;
-      out.sent.append(small2);
+      const showResult = (node, raw) => {
+        node.replaceChildren(document.createTextNode(LABELS[raw] || raw));
+        // Show the model's own (Italian) label only when it differs from what is displayed.
+        if (LABELS[raw] && LABELS[raw] !== raw) {
+          const small = document.createElement('small');
+          small.textContent = `${t.modelLabel}: ${raw}`;
+          node.append(small);
+        }
+      };
+      showResult(out.cat, bestCat.c);
+      showResult(out.sent, bestSent.c);
       renderBars(out.catBars, cat);
       renderBars(out.sentBars, sent);
 
-      if (!text) out.warn.textContent = 'Type a sentence to see what the model thinks.';
-      else if (known === 0) out.warn.textContent = 'None of these words are in the 86-word vocabulary — the model is guessing from its priors.';
-      else if (bestSent.p < 0.6) out.warn.textContent = 'Sentiment confidence is close to a coin flip: this sentence is outside what the training data covered.';
+      if (!text) out.warn.textContent = t.empty;
+      else if (known === 0) out.warn.textContent = t.unknown;
+      else if (bestSent.p < 0.6) out.warn.textContent = t.coinFlip;
       else out.warn.textContent = '';
     };
 
-    let t;
-    textarea.addEventListener('input', () => { clearTimeout(t); t = setTimeout(run, 90); });
+    let debounce;
+    textarea.addEventListener('input', () => { clearTimeout(debounce); debounce = setTimeout(run, 90); });
     el.querySelectorAll('[data-example]').forEach((b) => b.addEventListener('click', () => {
       textarea.value = b.dataset.example;
       run();

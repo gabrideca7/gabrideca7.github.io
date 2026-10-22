@@ -6,6 +6,8 @@
   <title>Outsyd Sentinel — ML thesis project · Gabriele Decandia</title>
   <meta name="description" content="Case study: Outsyd Sentinel, a machine-learning prototype that routes traveller reviews to the right department and classifies sentiment. Try the trained model live in your browser.">
   <link rel="canonical" href="https://gabrideca7.github.io/work/sentinel.html">
+  <link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/sentinel.html">
+  <link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/sentinel.html">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Outsyd Sentinel — ML thesis project">
   <meta property="og:description" content="Routing traveller reviews with machine learning — and an honest look at a perfect score.">
@@ -18,7 +20,7 @@
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <link rel="preload" href="../assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/data/sentinel-model.json" as="fetch" type="application/json" crossorigin>
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css?v=2026102202">
   <script>
     (function () {
       var d = document.documentElement;
@@ -26,7 +28,7 @@
       try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') d.dataset.theme = t; } catch (e) {}
     })();
   </script>
-  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/main.js?v=2026102202" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -41,6 +43,7 @@
       </nav>
       <div class="header-meta">
         <span class="clock mono" data-clock>Altamura, IT <time>--:--</time></span>
+        <nav class="lang-switch mono" aria-label="Language"><span aria-current="true">EN</span><a href="../it/work/sentinel.html" hreflang="it" lang="it" title="Versione italiana">IT</a></nav>
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
           <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.2"/><path class="half" d="M8 1.6a6.4 6.4 0 0 1 0 12.8z" fill="currentColor"/></svg>
         </button>

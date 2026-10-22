@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="it" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zaptopia — Gioco di carte roguelike · Gabriele Decandia</title>
+  <meta name="description" content="Caso studio: Zaptopia, gioco di carte roguelike per iOS e Android sviluppato con TypeScript, Phaser e Three.js. Dal primo prototipo alla beta chiusa su entrambi gli store in meno di due settimane.">
+  <link rel="canonical" href="https://gabrideca7.github.io/it/work/zaptopia.html">
+  <link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/zaptopia.html">
+  <link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/zaptopia.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Zaptopia — Gioco di carte roguelike">
+  <meta property="og:description" content="Creature buffe, un tavolo 3D e combo che si moltiplicano. Un caso studio di Gabriele Decandia.">
+  <meta property="og:url" content="https://gabrideca7.github.io/it/work/zaptopia.html">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:image" content="https://gabrideca7.github.io/assets/img/og-it.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f2efe7">
+  <link rel="icon" href="../../favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../../favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="preload" href="../../assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../assets/css/style.css?v=2026102202">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.className = d.className.replace('no-js', 'js');
+      try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') d.dataset.theme = t; } catch (e) {}
+    })();
+  </script>
+  <script src="../../assets/js/main.js?v=2026102202" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../" aria-label="Gabriele Decandia — home">Gabriele Decandia<span class="brand-dot">.</span></a>
+      <nav class="nav" aria-label="Principale">
+        <a href="../#work" aria-current="page">Lavori</a>
+        <a href="../#about">Chi sono</a>
+        <a href="../#contact">Contatti</a>
+      </nav>
+      <div class="header-meta">
+        <span class="clock mono" data-clock>Altamura, IT <time>--:--</time></span>
+        <nav class="lang-switch mono" aria-label="Lingua"><a href="../../work/zaptopia.html" hreflang="en" lang="en" title="English version">EN</a><span aria-current="true">IT</span></nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambia tema">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.2"/><path class="half" d="M8 1.6a6.4 6.4 0 0 1 0 12.8z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap cs-hero">
+      <a class="cs-back" href="../#work"><span class="arrow" aria-hidden="true">←</span> Tutti i lavori</a>
+      <div class="cs-kicker"><span class="label">Caso studio 02</span><span class="tag tag--status">Beta chiusa</span></div>
+      <h1 class="cs-title">Zaptopia</h1>
+      <p class="lede cs-sub">Un gioco di carte roguelike per smartphone — creature buffe, un tavolo 3D e <em>combo che si moltiplicano.</em></p>
+
+      <dl class="grid cs-meta">
+        <div><dt class="label">Ruolo</dt><dd>Da solo — game design, sviluppo, direzione artistica, rilascio</dd></div>
+        <div><dt class="label">Periodo</dt><dd>Settembre 2026 — in corso<br>Versione 1.35</dd></div>
+        <div><dt class="label">Tecnologie</dt><dd>TypeScript · Phaser 3 · Three.js · Vite · Capacitor · Supabase</dd></div>
+        <div><dt class="label">Stato</dt><dd>Test chiuso su Google Play e TestFlight. <a href="../#contact">Chiedimi un invito</a></dd></div>
+      </dl>
+    </section>
+
+    <section class="wrap cs-cover reveal" aria-label="Schermate">
+      <div class="media media--zaptopia">
+        <img class="env" src="../../assets/img/zaptopia/env-1400.webp" width="1024" height="572" alt="" decoding="async">
+        <img class="zap-logo" src="../../assets/img/zaptopia/logo-480.webp" srcset="../../assets/img/zaptopia/logo-480.webp 480w, ../../assets/img/zaptopia/logo-900.webp 900w" sizes="(max-width: 700px) 50vw, 26vw" width="480" height="342" alt="Il logo di Zaptopia" decoding="async">
+        <span class="zap-sub">Gioco di carte roguelike · iOS &amp; Android</span>
+        <div class="phone phone--plain"><div class="phone-screen"><img src="../../assets/img/zaptopia/menu-420.webp" srcset="../../assets/img/zaptopia/menu-420.webp 420w, ../../assets/img/zaptopia/menu-760.webp 760w" sizes="(max-width: 700px) 40vw, 18vw" width="420" height="747" alt="Il menu principale con le creature sul tavolo 3D" decoding="async"></div></div>
+        <div class="phone phone--plain"><div class="phone-screen"><img src="../../assets/img/zaptopia/battle-420.webp" srcset="../../assets/img/zaptopia/battle-420.webp 420w, ../../assets/img/zaptopia/battle-760.webp 760w" sizes="(max-width: 700px) 46vw, 22vw" width="420" height="747" alt="Uno scontro contro lo Gnomo Brontolone su un tavolo a quattro corsie" decoding="async"></div></div>
+        <div class="phone phone--plain"><div class="phone-screen"><img src="../../assets/img/zaptopia/shop-420.webp" srcset="../../assets/img/zaptopia/shop-420.webp 420w, ../../assets/img/zaptopia/shop-760.webp 760w" sizes="(max-width: 700px) 40vw, 18vw" width="420" height="747" alt="La bottega tra uno scontro e l’altro: carte, Jolly e servizi" decoding="async"></div></div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <!-- 01 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s1">
+        <div class="cs-label"><h2 class="label" id="s1">01 — L’idea</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">Le battaglie a corsie dei giochi da tavolo, con il <em>«ancora una partita»</em> dei roguelike moderni.</p>
+          <div class="prose reveal">
+            <p>Quattro corsie, quattro terreni: Palude, Vulcano, Nuvole e Cripta. Una creatura si gioca solo sulla corsia del suo terreno, quindi ogni mano è un piccolo rompicapo. All’attacco ogni creatura colpisce la corsia davanti a sé. I colpi si sommano nel <strong>Danno</strong>; doppi, tripli e assalti totali fanno salire la <strong>Combo</strong>. Il boss subisce il prodotto.</p>
+            <p>Tra uno scontro e l’altro percorri un sentiero a bivi — bottega, falò, evento misterioso, tesoro — e raccogli Jolly che piegano le regole, come in Balatro. Le partite sono brevi, si giocano con una mano e funzionano anche offline.</p>
+          </div>
+        </div>
+        <div class="cs-full mt-l reveal">
+          <div class="formula" role="img" aria-label="Danno per Combo dà il colpo che subisce il boss">
+            <span class="chip chip--dmg"><small>DANNO</small>12</span>
+            <span class="op">×</span>
+            <span class="chip chip--combo"><small>COMBO</small>4</span>
+            <span class="op">=</span>
+            <span class="chip chip--total"><small>IL BOSS SUBISCE</small>48</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s2">
+        <div class="cs-label"><h2 class="label" id="s2">02 — Cosa c’è dentro</h2></div>
+        <div class="cs-body">
+          <div class="kpis reveal">
+            <div class="kpi"><div class="kpi-value">95</div><div class="kpi-label">carte illustrate — 60 creature, 35 magie</div></div>
+            <div class="kpi"><div class="kpi-value">46</div><div class="kpi-label">Jolly, quattro rarità, edizioni speciali</div></div>
+            <div class="kpi"><div class="kpi-value">4</div><div class="kpi-label">mondi, ognuno con un boss e una sua regola</div></div>
+            <div class="kpi"><div class="kpi-value">1</div><div class="kpi-label">sfida del giorno, lo stesso mazzo per tutti</div></div>
+          </div>
+          <div class="prose reveal">
+            <p>Intorno al gioco: mazzi iniziali ed editor del mazzo, potenziamenti ed evoluzioni delle carte, un album da completare, missioni giornaliere, livelli del giocatore, una serie di accessi e oggetti estetici — dorsi dipinti, ambienti animati, creature shiny.</p>
+          </div>
+        </div>
+        <div class="cs-full mt-l reveal" aria-label="Una selezione delle illustrazioni delle carte di Zaptopia">
+          <div class="marquee" style="--dur: 110s"><div class="marquee-track"><img src="../../assets/img/zaptopia/cards/aquila.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/balena.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/bardo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/bombarolo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/cavaliere.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/colibri.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/cyborg.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/drago.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/driade.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/fantasmino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/fenice.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/fungotto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/gattonero.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/gigante.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/golemlava.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/grifone.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/gufo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/lich.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/lumachino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/medusa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/mummia.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/pegaso.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/porcino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/ranocchio.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/aquila.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/balena.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/bardo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/bombarolo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/cavaliere.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/colibri.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/cyborg.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/drago.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/driade.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/fantasmino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/fenice.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/fungotto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/gattonero.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/gigante.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/golemlava.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/grifone.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/gufo.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/lich.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/lumachino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/medusa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/mummia.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/pegaso.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/porcino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/ranocchio.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"></div></div>
+          <div class="marquee marquee--reverse" style="--dur: 120s"><div class="marquee-track"><img src="../../assets/img/zaptopia/cards/regina.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/salamandrino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/scheletrino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/skambiaz.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/tartaruga.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/vampiretto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/vulcanotto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/zombino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/zucca.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/pipistrello.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/ragno.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/mongolfiera.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/bigbang.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/calamita.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/cometa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/fulmine.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/tornado.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/terremoto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/vortice.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/pozione.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/jackpot.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/festa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/banchetto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/syd.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/regina.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/salamandrino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/scheletrino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/skambiaz.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/tartaruga.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/vampiretto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/vulcanotto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/zombino.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/zucca.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/pipistrello.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/ragno.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/mongolfiera.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/bigbang.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/calamita.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/cometa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/fulmine.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/tornado.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/terremoto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/vortice.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/pozione.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/jackpot.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/festa.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/banchetto.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"><img src="../../assets/img/zaptopia/cards/syd.webp" width="400" height="280" alt="" loading="eager" fetchpriority="low" decoding="async"></div></div>
+        </div>
+      </section>
+
+      <!-- 03 -->
+      <section class="cs-section grid cs-row" id="engineering" aria-labelledby="s3">
+        <div class="cs-label"><h2 class="label" id="s3">03 — Ingegneria</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">Un solo codice TypeScript, due motori grafici, <em>entrambi gli store.</em></p>
+        </div>
+        <div class="cs-full mt-m decisions">
+          <article class="decision reveal">
+            <span class="label">A · Grafica</span>
+            <h3>Due motori grafici, uno schermo.</h3>
+            <p>Three.js disegna il tavolo, le creature 3D e gli ambienti dei boss; sopra, un canvas Phaser trasparente gestisce carte, interfaccia e tocchi. La telecamera sta bassa, come se fossi seduto di fronte al boss.</p>
+            <div class="split">
+              <div><span class="label">Perché</span><span>Phaser è ottimo per l’interfaccia 2D e il flusso di gioco, Three.js per il 3D vero. Sovrapporli lascia a ognuno quello che sa fare meglio.</span></div>
+              <div><span class="label">Attenzione</span><span>Sui telefoni meno potenti il risparmio batteria si attiva da solo al primo avvio.</span></div>
+            </div>
+          </article>
+          <article class="decision reveal" style="--delay: .08s">
+            <span class="label">B · Bilanciamento</span>
+            <h3>Prima ci gioca un bot.</h3>
+            <p>Un bot senza interfaccia gioca partite complete con il vero codice del gioco, così ogni modifica al bilanciamento si misura invece di indovinarla. Prima di una correzione vinceva 0 partite su 10 e superava in media 6,7 scontri; dopo, 1 vittoria e 8,4 scontri.</p>
+            <div class="split">
+              <div><span class="label">Regola</span><span>Il costo delle carte segue un budget: un punto di energia vale circa 4–5 punti di statistiche più un piccolo effetto. Chi esce dalla regola viene corretto.</span></div>
+            </div>
+          </article>
+          <article class="decision reveal">
+            <span class="label">C · Online</span>
+            <h3>Niente account, niente e-mail.</h3>
+            <p>Classifiche mondiali e salvataggi online girano su Supabase senza chiedere la registrazione. Ogni telefono riceve un id casuale e un codice segreto di 16 caratteri; con il codice si recuperano i progressi su un nuovo dispositivo.</p>
+            <div class="split">
+              <div><span class="label">Sicurezza</span><span>Le tabelle non sono leggibili dall’app, i codici sbagliati vengono rifiutati, le statistiche anonime si possono spegnere. Senza connessione il gioco continua semplicemente a funzionare.</span></div>
+            </div>
+          </article>
+          <article class="decision reveal" style="--delay: .08s">
+            <span class="label">D · Correttezza</span>
+            <h3>Paghi l’estetica, mai la forza.</h3>
+            <p>Il gioco è tutto gratuito. Con soldi veri si comprano solo elementi estetici; le buste di carte si pagano con le stelle guadagnate giocando — niente loot box a pagamento. I video con ricompensa sono facoltativi.</p>
+            <div class="split">
+              <div><span class="label">Dettaglio</span><span>Niente emoji nell’interfaccia: un font di icone a colori fatto apposta mantiene ogni simbolo identico su ogni telefono.</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 04 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s4">
+        <div class="cs-label"><h2 class="label" id="s4">04 — Schermate</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal">Solo in verticale, a misura di pollice, leggibile al primo sguardo.</p>
+        </div>
+        <figure class="cs-full mt-m reveal">
+          <div class="phones-row" style="--n: 4; --bg: #12164a">
+            <figure>
+              <div class="phone phone--flow phone--plain"><div class="phone-screen"><img src="../../assets/img/zaptopia/battle-420.webp" srcset="../../assets/img/zaptopia/battle-420.webp 420w, ../../assets/img/zaptopia/battle-760.webp 760w" sizes="(max-width: 700px) 60vw, 18vw" width="420" height="747" alt="Scontro: corsie, contatori di danno e combo, la mano di carte" loading="lazy" decoding="async"></div></div>
+              <figcaption class="label" style="color:#aab0e8">Scontro</figcaption>
+            </figure>
+            <figure>
+              <div class="phone phone--flow phone--plain"><div class="phone-screen"><img src="../../assets/img/zaptopia/map-420.webp" srcset="../../assets/img/zaptopia/map-420.webp 420w, ../../assets/img/zaptopia/map-760.webp 760w" sizes="(max-width: 700px) 60vw, 18vw" width="420" height="747" alt="Mappa del mondo con il prossimo scontro e la scelta del sentiero" loading="lazy" decoding="async"></div></div>
+              <figcaption class="label" style="color:#aab0e8">Scegli il sentiero</figcaption>
+            </figure>
+            <figure>
+              <div class="phone phone--flow phone--plain"><div class="phone-screen"><img src="../../assets/img/zaptopia/album-420.webp" srcset="../../assets/img/zaptopia/album-420.webp 420w, ../../assets/img/zaptopia/album-760.webp 760w" sizes="(max-width: 700px) 60vw, 18vw" width="420" height="747" alt="L’album con tutte le 95 carte" loading="lazy" decoding="async"></div></div>
+              <figcaption class="label" style="color:#aab0e8">Album</figcaption>
+            </figure>
+            <figure>
+              <div class="phone phone--flow phone--plain"><div class="phone-screen"><img src="../../assets/img/zaptopia/shop-420.webp" srcset="../../assets/img/zaptopia/shop-420.webp 420w, ../../assets/img/zaptopia/shop-760.webp 760w" sizes="(max-width: 700px) 60vw, 18vw" width="420" height="747" alt="La bottega con carte, una busta, Jolly e servizi" loading="lazy" decoding="async"></div></div>
+              <figcaption class="label" style="color:#aab0e8">Bottega</figcaption>
+            </figure>
+          </div>
+        </figure>
+      </section>
+
+      <!-- 05 -->
+      <section class="cs-section grid cs-row" aria-labelledby="s5">
+        <div class="cs-label"><h2 class="label" id="s5">05 — Rilasci</h2></div>
+        <div class="cs-body">
+          <p class="lede reveal"><em>36 build di rilascio</em> nelle prime tre settimane.</p>
+          <div class="prose reveal">
+            <p>Ogni build viene firmata, provata su un emulatore per scovare i crash e caricata sul test chiuso di Google Play e su TestFlight. I tester ricevono un avviso nell’app quando esce una versione nuova, e un piccolo feed di notizie mi permette di parlare con loro senza pubblicare un aggiornamento.</p>
+            <p>Anche tutto quello che sta intorno al gioco è codice: script Python generano il font di icone, le varianti del logo e i dorsi delle carte, e uno script con Chrome headless cattura gli screenshot per gli store direttamente dal gioco in esecuzione.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <a class="next wrap" href="nicoletti.html">
+      <span class="label">Prossimo caso studio</span>
+      <span class="next-title">Nicoletti Raffaele <span class="arrow" aria-hidden="true">→</span></span>
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span data-year>2026</span> Gabriele Decandia</span>
+      <span>Fatto a mano con HTML, CSS e un po’ di JavaScript. Niente cookie, niente tracciamento.</span>
+      <a href="../#contact">Scrivimi →</a>
+    </div>
+  </footer>
+</body>
+</html>

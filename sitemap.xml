@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gabrideca7.github.io/</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://gabrideca7.github.io/work/outsyd.html</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://gabrideca7.github.io/work/zaptopia.html</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://gabrideca7.github.io/work/nicoletti.html</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://gabrideca7.github.io/work/rinaldi.html</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://gabrideca7.github.io/work/sentinel.html</loc><lastmod>2026-10-20</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://gabrideca7.github.io/</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/"/></url>
+  <url><loc>https://gabrideca7.github.io/it/</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/"/></url>
+  <url><loc>https://gabrideca7.github.io/work/outsyd.html</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/outsyd.html"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/outsyd.html"/></url>
+  <url><loc>https://gabrideca7.github.io/it/work/outsyd.html</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/outsyd.html"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/outsyd.html"/></url>
+  <url><loc>https://gabrideca7.github.io/work/zaptopia.html</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/zaptopia.html"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/zaptopia.html"/></url>
+  <url><loc>https://gabrideca7.github.io/it/work/zaptopia.html</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/zaptopia.html"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/zaptopia.html"/></url>
+  <url><loc>https://gabrideca7.github.io/work/nicoletti.html</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/nicoletti.html"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/nicoletti.html"/></url>
+  <url><loc>https://gabrideca7.github.io/it/work/nicoletti.html</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/nicoletti.html"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/nicoletti.html"/></url>
+  <url><loc>https://gabrideca7.github.io/work/rinaldi.html</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/rinaldi.html"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/rinaldi.html"/></url>
+  <url><loc>https://gabrideca7.github.io/it/work/rinaldi.html</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/rinaldi.html"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/rinaldi.html"/></url>
+  <url><loc>https://gabrideca7.github.io/work/sentinel.html</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/sentinel.html"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/sentinel.html"/></url>
+  <url><loc>https://gabrideca7.github.io/it/work/sentinel.html</loc><lastmod>2026-10-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/sentinel.html"/><xhtml:link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/sentinel.html"/></url>
 </urlset>
