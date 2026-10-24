@@ -420,7 +420,12 @@ code, .code {
   align-items: end;
   row-gap: 40px;
 }
-.hero-lede { grid-column: 1 / span 7; }
+.hero-lede { grid-column: 1 / span 7; color: var(--ink-2); }
+.lede-lead {
+  display: block;
+  margin-bottom: 0.5em;
+  color: var(--ink);
+}
 .hero-facts {
   grid-column: 9 / span 4;
   display: grid;
