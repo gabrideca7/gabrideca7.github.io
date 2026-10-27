@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zaptopia — Roguelike card battler · Gabriele Decandia</title>
-  <meta name="description" content="Case study: Zaptopia, a roguelike card battler for iOS and Android built with TypeScript, Phaser and Three.js. From first prototype to closed beta on both stores in under two weeks.">
+  <meta name="description" content="Case study: Zaptopia, a roguelike card battler for iOS and Android built with TypeScript, Phaser and Three.js. Live on the App Store; Android follows in November.">
   <link rel="canonical" href="https://gabrideca7.github.io/work/zaptopia.html">
   <link rel="alternate" hreflang="en" href="https://gabrideca7.github.io/work/zaptopia.html">
   <link rel="alternate" hreflang="it" href="https://gabrideca7.github.io/it/work/zaptopia.html">
@@ -19,7 +19,7 @@
   <link rel="icon" href="../favicon.png" type="image/png" sizes="64x64">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
   <link rel="preload" href="../assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../assets/css/style.css?v=2026102401">
+  <link rel="stylesheet" href="../assets/css/style.css?v=2026102702">
   <script>
     (function () {
       var d = document.documentElement;
@@ -27,7 +27,7 @@
       try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') d.dataset.theme = t; } catch (e) {}
     })();
   </script>
-  <script src="../assets/js/main.js?v=2026102401" defer></script>
+  <script src="../assets/js/main.js?v=2026102702" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -53,15 +53,15 @@
   <main id="main">
     <section class="wrap cs-hero">
       <a class="cs-back" href="../#work"><span class="arrow" aria-hidden="true">←</span> All work</a>
-      <div class="cs-kicker"><span class="label">Case study 02</span><span class="tag tag--status">Closed beta</span></div>
+      <div class="cs-kicker"><span class="label">Case study 02</span><span class="tag tag--live">Live on the App Store</span></div>
       <h1 class="cs-title">Zaptopia</h1>
       <p class="lede cs-sub">A roguelike card battler for phones — goofy creatures, a 3D table and <em>combos that multiply.</em></p>
 
       <dl class="grid cs-meta">
         <div><dt class="label">Role</dt><dd>Solo — game design, development, art direction, release</dd></div>
-        <div><dt class="label">Timeline</dt><dd>September 2026 — ongoing<br>Version 1.35</dd></div>
+        <div><dt class="label">Timeline</dt><dd>September 2026 — ongoing<br>Version 1.42</dd></div>
         <div><dt class="label">Stack</dt><dd>TypeScript · Phaser 3 · Three.js · Vite · Capacitor · Supabase</dd></div>
-        <div><dt class="label">Status</dt><dd>Closed testing on Google Play and TestFlight. <a href="../#contact">Ask me for an invite</a></dd></div>
+        <div><dt class="label">Status</dt><dd><a href="https://apps.apple.com/app/id6819222989" target="_blank" rel="noopener">Live on the App Store</a><br>Google Play: early November 2026</dd></div>
       </dl>
     </section>
 
@@ -196,6 +196,7 @@
           <p class="lede reveal"><em>36 release builds</em> in the first three weeks.</p>
           <div class="prose reveal">
             <p>Every build is signed, smoke-tested on an emulator for crashes and uploaded to Google Play’s closed track and TestFlight. Testers get an in-app prompt when a new version is out, and a small news feed lets me talk to them without shipping an update.</p>
+            <p>Version 1.42 is now live on the App Store. Google Play asks for a two-week closed test with at least twelve testers before a new app can reach production, so Android follows in early November.</p>
             <p>The pipeline around the game is code too: Python scripts generate the icon font, logo variants and card backs, and a headless-Chrome script captures the store screenshots straight from the running game.</p>
           </div>
         </div>
